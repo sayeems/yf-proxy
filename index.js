@@ -67,11 +67,11 @@ app.get('/query/:symbol', async (req, res) => {
             priceLowestLastYear: summaryDetail?.fiftyTwoWeekLow || "",
             priceHighestLastYear: summaryDetail?.fiftyTwoWeekHigh || "",
             priceChangeLastYear: defaultKeyStatistics['52WeekChange'] || "",
-            reconStrongBuy: recommendationTrend?.trend[0]?.strongBuy || "",
-            reconBuy: recommendationTrend?.trend[0]?.buy || "",
-            reconHold: recommendationTrend?.trend[0]?.hold || "",
-            reconSell: recommendationTrend?.trend[0]?.sell || "",
-            reconStrongSell: recommendationTrend?.trend[0]?.strongSell || ""
+            reconStrongBuy: recommendationTrend?.trend[0]?.strongBuy,
+            reconBuy: recommendationTrend?.trend[0]?.buy,
+            reconHold: recommendationTrend?.trend[0]?.hold,
+            reconSell: recommendationTrend?.trend[0]?.sell,
+            reconStrongSell: recommendationTrend?.trend[0]?.strongSell
         })
 
     } catch (err) {
