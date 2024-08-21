@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.set('Cache-Control', 'public, max-age=86400');
 
     return res.json({
-        message: "hello!"
+        message: "hello from multidev"
     })
 })
 
